@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
+langcode: en
+uuid: f365ca59-df0e-45a2-ad91-6065ca20818c
+name: AI-Demo
+mail: ajinkya8975@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /ai-demo-videos-listing
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: null

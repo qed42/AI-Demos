@@ -1,0 +1,41 @@
+uuid: cafc2072-198b-4980-902a-8ca7e1f0dc5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ai_demo.field_description
+    - field.field.node.ai_demo.field_urls
+    - node.type.ai_demo
+  module:
+    - text
+    - user
+    - video_embed_field
+id: node.ai_demo.default
+targetEntityType: node
+bundle: ai_demo
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_urls:
+    type: video_embed_field_video
+    label: hidden
+    settings:
+      autoplay: true
+      responsive: true
+      width: 854
+      height: 480
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
