@@ -1,0 +1,51 @@
+uuid: 9586a1d8-5319-4daf-883e-8f64d4b7f038
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ai_demo
+    - node.type.article
+    - node.type.page
+  module:
+    - content_moderation
+_core:
+  default_config_hash: T7gMMyFbTYLalxpIOnzJebvek2OW0b1RgLVE9I2y228
+id: editorial
+label: Editorial
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Draft
+      weight: -5
+      published: false
+      default_revision: false
+    in_review:
+      label: 'In Review'
+      weight: 1
+      published: false
+      default_revision: false
+    published:
+      label: Published
+      weight: 0
+      published: true
+      default_revision: true
+  transitions:
+    move_to_in_review:
+      label: 'Move to In Review'
+      from:
+        - draft
+      to: in_review
+      weight: -1
+    publish:
+      label: Publish
+      from:
+        - in_review
+      to: published
+      weight: 0
+  entity_types:
+    node:
+      - ai_demo
+      - article
+      - page
+  default_moderation_state: draft

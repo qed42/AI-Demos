@@ -3,7 +3,7 @@ _core:
 langcode: en
 uuid: c085c729-9b6d-45fe-b870-6bb022a25a96
 name: AI-Demo
-mail: alphons.jaimon@qed42.com
+mail: admin@example.com
 slogan: ''
 page:
   403: ''

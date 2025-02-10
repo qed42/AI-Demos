@@ -7,8 +7,10 @@ dependencies:
     - node.type.article
     - node.type.page
     - taxonomy.vocabulary.tags
+    - workflows.workflow.editorial
   module:
     - comment
+    - content_moderation
     - contextual
     - file
     - node
@@ -34,18 +36,17 @@ permissions:
   - 'create page content'
   - 'create terms in tags'
   - 'create url aliases'
-  - 'delete article revisions'
   - 'delete own ai_demo content'
   - 'delete own article content'
   - 'delete own files'
   - 'delete own page content'
-  - 'delete page revisions'
   - 'edit own ai_demo content'
   - 'edit own article content'
   - 'edit own comments'
   - 'edit own page content'
   - 'edit terms in tags'
   - 'revert all revisions'
+  - 'use editorial transition move_to_in_review'
   - 'view all revisions'
   - 'view own unpublished content'
   - 'view the administration theme'
